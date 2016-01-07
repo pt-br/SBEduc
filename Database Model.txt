@@ -1,0 +1,11 @@
+create database biblioteca;
+
+use biblioteca;
+
+create table alunos(codigo integer(255) auto_increment not null, nome_aluno varchar(255), turma varchar(255), data_cad varchar(255), endereço varchar(255), telefone varchar(255),primary key(codigo));
+
+create table livros(codigo_livro integer(255) auto_increment not null, num_reg varchar(255), titulo_livro varchar(255),
+ nome_autor varchar(255),categoria varchar(255), data_cad varchar(255), editora varchar(255), disponibilidade varchar(255), primary key(codigo_livro));
+
+create table painel(codigo integer(255) not null auto_increment,nome_aluno varchar(255),turma varchar(255),livro varchar(255),data_dev varchar(255), primary key(codigo) );
+
